@@ -56,11 +56,11 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
 
-      <div className="mx-auto grid h-16 max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 sm:px-6 lg:px-8 xl:flex xl:justify-between">
+      <div className="mx-auto grid h-16 max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 sm:px-6 lg:px-8 lg:flex lg:justify-between">
 
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
           <SheetTrigger
-            render={<Button variant="ghost" size="icon" className="xl:hidden" aria-label="Open menu" />}
+            render={<Button variant="ghost" size="icon" className="lg:hidden" aria-label="Open menu" />} // CHANGED: xl:hidden -> lg:hidden
           >
             <Menu className="size-5" />
           </SheetTrigger>
@@ -143,15 +143,14 @@ export function Navbar() {
   
         <Link
           to="/"
-          className="col-start-2 flex shrink-0 items-center justify-self-center xl:col-start-auto xl:order-first xl:justify-self-auto"
+          className="col-start-2 flex shrink-0 items-center justify-self-center lg:col-start-auto lg:order-first lg:justify-self-auto"
         >
           <span className="text-xl font-bold tracking-tight">
             <span className="font-black">C</span>artify
           </span>
         </Link>
 
-        {/* Desktop nav links — only visible at xl+, sits between logo and actions */}
-        <nav className="hidden items-center gap-1 xl:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -168,7 +167,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center justify-self-end gap-1 sm:gap-2 xl:justify-self-auto">
+        <div className="flex items-center justify-self-end gap-1 sm:gap-2 lg:justify-self-auto">
           <Popover open={searchOpen} onOpenChange={setSearchOpen}>
             <PopoverTrigger
               render={<Button variant="ghost" size="icon" aria-label="Search" />}
@@ -227,7 +226,7 @@ export function Navbar() {
               </Badge>
             )}
           </Button>
-<ThemeToggle />
+          <ThemeToggle />
           <Button
             variant="ghost"
             size="icon"
