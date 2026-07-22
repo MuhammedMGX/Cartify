@@ -323,7 +323,7 @@ export function ProductReviews({ productId }: { productId: string }) {
   }
 
   return (
-    <section aria-labelledby="reviews-heading" className="flex flex-col gap-6">
+    <section aria-labelledby="reviews-heading" className="flex flex-col gap-6 mt-15">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div className="flex flex-col gap-1">
           <h2 id="reviews-heading" className="text-xl font-semibold tracking-tight">

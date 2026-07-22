@@ -205,7 +205,7 @@ const isInWishlist = wishlist.some((item: Product) => item._id === product?._id)
           <h2 className="mb-7 mt-20 text-center text-xl font-extrabold">
             Related Products
           </h2>
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-wrap justify-center gap-0 md:gap-5">
             {relatedProducts.map((related: Product) => (
               <ProductCard key={related._id} product={related}/>
             ))}

@@ -67,7 +67,9 @@ export function Navbar() {
           <SheetContent side="left" className="w-72">
             <SheetHeader>
               <SheetTitle>
-                <span className="font-black text-3xl">C</span>artify
+                <span className="text-xl font-bold tracking-tight">
+                  <span className="font-black">C</span>artify
+                </span>
               </SheetTitle>
             </SheetHeader>
 
@@ -144,7 +146,7 @@ export function Navbar() {
           className="col-start-2 flex shrink-0 items-center justify-self-center xl:col-start-auto xl:order-first xl:justify-self-auto"
         >
           <span className="text-xl font-bold tracking-tight">
-            Cart<span className="text-primary">ify</span>
+            <span className="font-black">C</span>artify
           </span>
         </Link>
 
