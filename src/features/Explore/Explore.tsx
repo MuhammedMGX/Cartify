@@ -131,7 +131,7 @@ export default function ExplorePage() {
             {featuredProducts.map((product: Product) => (
               <div
               key={product._id}
-              className=" min:h-[360px] p-4 product rounded-xl overflow-hidden transition duration-500 shadow hover:shadow-2xl dark:shadow-gray-800 dark:hover:shadow-3xl relative dark:bg-gray-800"
+              className=" min:h-[360px] p-4 product rounded-xl overflow-hidden transition duration-500  shadow-none    sm:shadow sm:hover:shadow-2xl   dark:hover:shadow-gray-900 dark:hover:shadow-xl  relative dark:bg-muted/50"
             >
               <Link to={`/products/${product._id}/${product.category?.name ?? "category"}`}>
                 <div>
